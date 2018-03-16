@@ -1,0 +1,191 @@
+body {
+  background: #fff;
+}
+
+.logo {
+  width: 6.875em;
+  margin: 4em auto;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.form-log .inp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-bottom: 1em;
+  padding-bottom: 0.75em;
+}
+
+.form-log .inp .label {
+  color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  margin-right: 1em;
+}
+
+.form-log .inp .txt {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  height: 2em;
+  line-height: 2em;
+  border: none;
+  text-align: left;
+}
+
+.form-log .inp .txt input {
+  height: 2em;
+  width: 100%;
+}
+
+.log-side {
+  text-align: center;
+  color: #eee;
+  bottom: 3em;
+  width: 100%;
+  color: #e0dede;
+}
+
+.log-side .log {
+  display: inline-block;
+  margin: 0 0.5em;
+  position: relative;
+}
+
+.log-side .log .log-new {
+  display: block;
+  position: absolute;
+  bottom: -2em;
+  left: -1.7em;
+  background: url(../images/i-read.png) no-repeat left center;
+  -webkit-background-size: 1em 1em;
+          background-size: 1em 1em;
+  padding-left: 1.5em;
+  width: 6em;
+  text-decoration: underline;
+}
+
+.log-side a {
+  color: #3a8eff;
+}
+
+.forget .number {
+  height: 3em;
+  line-height: 3em;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.forget .name-fg {
+  text-align: center;
+  color: #3a8eff;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+.forget .reminder {
+  background: #84ceff;
+  text-align: center;
+  border-radius: 0.8em;
+  padding: 1em 0.9em;
+}
+
+.forget .reminder .txt {
+  color: #fff;
+  text-align: left;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.forget .reminder .center {
+  text-align: center;
+}
+
+.forget .reminder .icon {
+  width: 4.6em;
+  height: 6.2em;
+  margin-bottom: 1em;
+}
+
+.forget .reminder .step {
+  width: 48%;
+  background: #e3efff;
+  padding: 0.5em;
+  color: #333;
+  position: relative;
+  text-align: justify;
+}
+
+.forget .reminder .step .text {
+  font-size: 0.875em;
+}
+
+.forget .reminder .step .num {
+  position: absolute;
+  top: -0.6em;
+  left: -0.6em;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #f00;
+  color: #f00;
+  text-align: center;
+}
+
+.forget .reminder .step .trangle {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  border-width: 1em;
+  border-style: solid;
+  border-color: transparent  #84ceff  #84ceff transparent;
+}
+
+.forget .search-back {
+  color: #333;
+  text-align: center;
+  margin: 5em 0;
+}
+
+.forget .search-back .state:before {
+  content: '';
+  display: inline-block;
+  width: 2.25em;
+  height: 2.25em;
+  background: url(../images/i-error.png) no-repeat center;
+  -webkit-background-size: 2.25em 2.25em;
+          background-size: 2.25em 2.25em;
+  position: relative;
+  top: 0.8em;
+  right: 0.5em;
+}
+
+.forget .search-back .state-suc:before {
+  background: url(../images/i-get.png) no-repeat center;
+  -webkit-background-size: 2.25em 2.25em;
+          background-size: 2.25em 2.25em;
+}
+
+.forget .search-back .tip {
+  color: #333;
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 400px) {
+  .forget .reminder .txt {
+    font-size: 0.9em;
+  }
+}

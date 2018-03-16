@@ -1,0 +1,184 @@
+$c-blue:#3a8eff;
+$c-dgray:#333;
+$c-white:#fff;
+$c-lgray:#eee;
+$c-gray:#666;
+body{
+	background:#fff;
+}
+.logo{
+	width:6.875em;
+	margin:4em auto;
+}
+.logo img{
+	width:100%;
+}
+// 登陆信息
+.form-log{
+	.inp{
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:1em;
+		padding-bottom:0.75em;
+		.label{
+			color:$c-dgray;
+			display:block;
+			height:2em;
+			line-height:2em;
+			margin-right:1em;
+		}
+		.txt{
+			flex:1;
+			height:2em;
+			line-height:2em;
+			border:none;
+			text-align:left;
+			input{
+				height:2em;
+				width:100%;
+			}
+		}
+	}
+	
+}
+// 登陆页底部信息
+.log-side{
+	text-align:center;
+	color:$c-lgray;
+	// position:absolute;
+	bottom:3em;
+	width:100%;
+	color:#e0dede;
+	// background:blue;
+	.log{
+		display:inline-block;
+		margin:0 0.5em;
+		position:relative;
+		.log-new{
+			display:block;
+			position:absolute;
+			bottom:-2em;
+			left:-1.7em;
+			background:url(../images/i-read.png) no-repeat left center;
+			background-size:1em 1em;
+			padding-left:1.5em;
+			width:6em;
+			text-decoration:underline;
+			// background:red;
+		}
+	}
+	a{
+		color:$c-blue;
+
+	}
+}
+// 忘记账户信息
+.forget{
+	.number{
+		height:3em;
+		line-height:3em;
+		border-top:1px solid $c-lgray;
+		border-bottom:1px solid $c-lgray;
+		color:$c-gray;
+	}
+	.name-fg{
+		text-align:center;
+		color:$c-blue;
+		font-size:1.5em;
+		padding:1em 0;
+	}
+	.reminder{
+		background: #84ceff;
+		text-align: center;
+		border-radius: 0.8em;
+		padding: 1em 0.9em;
+		.txt{
+			color: $c-white;
+			text-align: left;
+			text-align:justify;
+			line-height: 1.5;
+
+		}
+		.center{
+			text-align:center;
+		}
+		.icon{
+			width: 4.6em;;
+			height: 6.2em;;
+			margin-bottom: 1em;
+		}
+		.step{
+			width:48%;
+			background:#e3efff;
+			padding:0.5em;
+			color:$c-dgray;
+			position:relative;
+			text-align:justify;
+			.text{
+				font-size:0.875em;
+			}
+			.num{
+				position:absolute;
+				top:-0.6em;;
+				left:-0.6em;;
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				line-height:1.2em;
+				background:$c-white;
+				border-radius:50%;
+				border:1px solid #f00;
+				color:#f00;
+				text-align:center;
+			}
+			.trangle{
+				display:inline-block;
+				position:absolute;
+				bottom:0;
+				right:0;
+				height:0;
+				border-width:1em;
+				border-style:solid;
+				border-color: transparent  #84ceff  #84ceff transparent;
+			}
+		}
+	}
+	.search-back{
+		color:$c-dgray;
+		text-align:center;
+		margin:5em 0;
+		.state{
+			&:before{
+				content:'';
+				display:inline-block;
+				width:2.25em;
+				height:2.25em;
+				background:url(../images/i-error.png) no-repeat center;
+				background-size:2.25em 2.25em;
+				position:relative;
+				top:0.8em;
+				right:0.5em;
+			}
+		}
+		.state-suc{
+			&:before{
+				background:url(../images/i-get.png) no-repeat center;
+				background-size:2.25em 2.25em;
+			}
+		}
+		.tip{
+			color:$c-dgray;
+			margin-top:1.5em;
+		}
+	}
+	
+}
+
+
+@media screen and (max-width: 400px) { 
+	// 实名认证
+	.forget .reminder .txt{
+		font-size:0.9em;
+	}
+	
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我</title>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 开启响应式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/global.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+	<div class="header">
+		<div class="top-bar"><i class="none">状态栏</i></div>
+		<div class="head">
+			<a href="javascript:;" class="back"><i class="none">返回</i></a>
+			<span class="title">筛选</span>
+		</div>
+	</div>
+	<div class="content p24">
+		<div class="txt-group mt24 txt-group-wri mb24">
+			<p class="name">购买方名称：</p>
+			<textarea class="txt-in" contenteditable="true"></textarea> 
+		</div>
+		<div class="clear data-select">
+			<div class="txt-group mt24 txt-group-wri left">
+				<p class="name">开票日期：</p>
+				<div class="txt-in"><input type="text"></div>
+				<span class='cala'><i class="none">日历图标</i></span>
+			</div>
+			<div class="txt-group mt24 txt-group-wri right">
+				<p class="name">开票员：</p>
+				<span class="angle angle2"><i class="none">下三角</i></span>
+				<!-- <div class="txt-in"> -->
+					<select class="txt-in">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div class="btn-wrapper p24 mt96">
+			<input type="button" value="确定" class="btn-log">
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>一点代开</title>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 开启响应式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/global.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+	<div class="header">
+		<div class="top-bar"><i class="none">状态栏</i></div>
+		<div class="head">
+			<a href="javascript:;" class="back"><i class="none">返回</i></a>
+			<span class="title">添加开票项信息</span>
+		</div>
+	</div>
+	<div class="content p24">
+
+		<div class="txt-group mt48 txt-group-wri">
+			<p class="name">
+				<span class="c-red">*</span>名称：
+				<input type="button" class="btn-k right btn-k-sear" value="查询"/>
+			</p>
+			<div class="txt-in" contenteditable="true"></div>
+		</div>
+
+		<div class="txt-group mt24 txt-group-wri">
+			<p class="name"><span class="c-red">*</span>纳税人识别号：</p>
+			<input class="txt-in" type="text" placeholder="企业填报时必填">
+		</div>
+		
+		<div>
+			<div class="txt-group mt24 txt-group-wri">
+				<p class="name">地址、电话：</p>
+				<div class="txt-in" contenteditable="true"></div>
+			</div>
+			<div class="txt-group mt24 txt-group-wri">
+				<p class="name">开户行及账号：</p>
+				<div class="txt-in" contenteditable="true"></div>
+			</div>
+		</div>
+		<p class="more-line mt24">
+			<span class="act">展开更多纳税人信息</span>
+			<!-- 收起信息样式去掉.act -->
+		</p>
+		<div class="btn-wrapper mt48">
+			<input type="button" value="保存" class="btn-log">
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
